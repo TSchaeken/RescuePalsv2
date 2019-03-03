@@ -8,7 +8,7 @@ module.exports = {
   entry: resolve(__dirname, './src/index.js'),
   output: {
     filename: 'bundle.js',
-    path: resolve(__dirname, 'public')
+    path: resolve(__dirname, 'dist')
   },
   devServer: {
     open: true,
