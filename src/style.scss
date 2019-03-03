@@ -46,7 +46,7 @@ html {
 
 .button.-purple {
   color: #ffffff;
-  background: blueviolet;
+  background: #004990;
 }
 
 //Header
@@ -94,13 +94,13 @@ html {
         min-width: 100px;
         text-align: center;
         text-decoration: none;
-        color: blueviolet;
+        color: #004990;
         transition: background-color 0.25s, text-decoration 0.25s;
         &:focus {
           text-decoration: underline;
         }
         &:hover {
-          background-color: blueviolet;
+          background-color: #004990;
           color: whitesmoke;
         }
       }
@@ -197,7 +197,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: blueviolet;
+  color: #004990;
   .info-container {
     height: 100%;
     padding: 0 10%;
@@ -212,7 +212,7 @@ html {
       display: flex;
       flex-direction: column;
       img {
-        border: 1px solid blueviolet;
+        border: 1px solid #004990;
         border-radius: 5%;
         align-self: center;
         max-height: 100%;
@@ -240,7 +240,7 @@ html {
 }
 
 .event-container {
-  border-top: 2px solid blueviolet;
+  border-top: 2px solid #004990;
   height: 40vh;
   width: 100%;
   padding: 0 10%;
@@ -248,7 +248,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: blueviolet;
+  color: #004990;
   .event-organize {
     display: flex;
     flex-direction: column;
@@ -261,15 +261,15 @@ html {
       align-content: center;
       justify-content: center;
       .event-dates {
-        border-left: 1px solid blueviolet;
-        border-bottom: 1px solid blueviolet;
+        border-left: 1px solid #004990;
+        border-bottom: 1px solid #004990;
         padding-left: 10px;
         width: 10%;
         min-width: 80px;
       }
       .event-details {
         width: 90%;
-        border-bottom: 1px solid blueviolet;
+        border-bottom: 1px solid #004990;
       }
     }
   }
