@@ -7,6 +7,7 @@ const Info = () => {
   };
   return (
     <div className="event-container">
+      <div className="border" />
       <h1>Upcoming Events!</h1>
       <div className="event-organize">
         <div className="row">
