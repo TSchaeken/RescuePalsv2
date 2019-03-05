@@ -1,25 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Logo from '../assets/Logo.png';
 
-const Header = ({ pages }) => {
+const Header = () => {
+  const pages = [
+    { text: `Adopt`, href: `/adopt` },
+    { text: `Donate`, href: `/donate` },
+    { text: `Contact`, href: `/contact` }
+  ];
   const pageLinks = pages.map(page => (
     <div className="item" key={page.text}>
-      <a className="link" href={page.href}>
+      <Link className="link" to={page.href}>
         <p>{page.text}</p>
-      </a>
+      </Link>
     </div>
   ));
   return (
     <nav className="header-container">
-      {/* <div className="item home">
-        <a href="/#" className="title">
-          Rescue Pals
-        </a>
-      </div> */}
       <div className="logo">
-        <a href="/#">
+        <Link to="/">
           <img src={Logo} alt="Rescue Pals Logo" />
-        </a>
+        </Link>
       </div>
       <div className="pages">{pageLinks}</div>
     </nav>

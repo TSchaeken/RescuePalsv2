@@ -1,12 +1,13 @@
 import React from 'react';
 
 const Feature = ({ featured }) => {
-  if (!featured)
+  if (!featured) {
     return (
       <div className="feature-container">
         <h1>Featuring...</h1>
       </div>
     );
+  }
 
   const summaryPlaceholder =
     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quisquam itaque perferendis quo aliquam dignissimos corporis natus, in commodi nobis, excepturi, ea laborum incidunt doloribus!';

@@ -4,6 +4,7 @@ $font-stack: 'Open Sans', sans-serif;
 html {
   background: whitesmoke;
   font-family: $font-stack;
+  overflow-y: scroll;
 }
 
 .button {
@@ -118,6 +119,7 @@ html {
 
 .spacer {
   padding-top: 8vh;
+  width: 100%;
 }
 .banner-container {
   font-family: $font-fun;
@@ -149,6 +151,13 @@ html {
   margin: -10px auto 0 auto;
   width: 80%;
   border-radius: 6px 6px 0 0;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.raised {
+  background-color: white;
+  border-radius: 6px 6px 6px 6px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
     0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
@@ -242,6 +251,80 @@ html {
         width: 90%;
         border-bottom: 1px solid #004990;
       }
+    }
+  }
+}
+
+.donate-conatiner {
+  height: 50vh;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.adopt-container {
+  margin: 10px auto 0 auto;
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .card-container {
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    &:hover .flipper {
+      transform: rotateY(180deg);
+    }
+    .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .card-front {
+      z-index: 2;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card-image {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          border: 1px solid blueviolet;
+          border-radius: 50%;
+          align-self: center;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    .card-back {
+      transform: rotateY(180deg);
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card-info {
+      }
+    }
+    .card-front,
+    .card-back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 }

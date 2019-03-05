@@ -8,13 +8,15 @@ module.exports = {
   entry: resolve(__dirname, './src/index.js'),
   output: {
     filename: 'bundle.js',
-    path: resolve(__dirname, 'dist')
+    path: resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   devServer: {
     open: true,
     overlay: true,
     hot: true,
-    stats: 'errors-only'
+    stats: 'errors-only',
+    historyApiFallback: true
   },
   module: {
     rules: [
