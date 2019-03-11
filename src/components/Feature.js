@@ -22,7 +22,7 @@ const Feature = ({ featured }) => {
             {/* <p>{featured.animalDescriptionPlain}</p> */}
             <p>{featured.animalSummary ? featured.animalSummary : summaryPlaceholder}</p>
           </div>
-          <button className="button -purple" type="button">
+          <button className="button" type="button">
             See more of {featured.animalName.toLowerCase()}
           </button>
         </div>

@@ -33,6 +33,8 @@ html {
   align-items: center;
   flex: 0 0 50px;
   box-shadow: 2px 5px 10px #e4e4e4;
+  color: #ffffff;
+  background: #004990;
   &:hover {
     transition: all 150ms linear;
     opacity: 0.85;
@@ -49,11 +51,6 @@ html {
   }
 }
 
-.button.-purple {
-  color: #ffffff;
-  background: #004990;
-}
-
 //Header
 .header-container {
   background-color: white;
@@ -66,6 +63,10 @@ html {
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  z-index: 999;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   .logo {
     position: relative;
     top: 55%;
@@ -140,7 +141,7 @@ html {
       -2px -2px 1px black, -2px -1px 1px black, -2px 0 1px black, -2px 1px 1px black,
       -2px 2px 1px black, -1px 2px 1px black, 0 2px 1px black, 1px 2px 1px black;
     color: floralwhite;
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
@@ -255,14 +256,20 @@ html {
   }
 }
 
-.donate-conatiner {
-  height: 50vh;
+.donate-container {
+  font: 200% $font-fun;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
   width: 100%;
   padding: 0 10%;
 }
 
 .adopt-container {
   margin: 10px auto 0 auto;
+  min-width: 800px;
   width: 80%;
   padding: 0 10%;
   display: flex;
@@ -273,7 +280,7 @@ html {
     margin: 20px;
     perspective: 1000px;
     width: 250px;
-    height: 250px;
+    height: 400px;
     display: inline-block;
     &:hover .flipper {
       transform: rotateY(180deg);
@@ -285,8 +292,6 @@ html {
     }
     .card-front {
       z-index: 2;
-      width: 250px;
-      height: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -298,7 +303,6 @@ html {
         justify-content: center;
         overflow: hidden;
         img {
-          border: 1px solid blueviolet;
           border-radius: 50%;
           align-self: center;
           max-width: 100%;
@@ -308,12 +312,12 @@ html {
     }
     .card-back {
       transform: rotateY(180deg);
-      width: 250px;
-      height: 250px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       .card-info {
+        font: 200% $font-fun;
       }
     }
     .card-front,
@@ -323,8 +327,19 @@ html {
       top: 0;
       left: 0;
       width: 250px;
-      height: 250px;
+      height: 300px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
+}
+
+.contact-container {
+  font: 200% $font-fun;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  padding: 0 10%;
 }

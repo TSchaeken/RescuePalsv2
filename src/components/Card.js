@@ -11,7 +11,9 @@ export default function Card({ dog }) {
         </div>
         <div className="card-back">
           <div className="card-info">{dog.animalName}</div>
-          <button type="button">Learn more!</button>
+          <button className="button" type="button">
+            Get to know me!
+          </button>
         </div>
       </div>
     </div>
